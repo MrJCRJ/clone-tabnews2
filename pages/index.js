@@ -3,10 +3,12 @@ function Home() {
     <div>
       <h1>Bem-vindo à página inicial</h1>
       <p>Esta é a página principal da nossa aplicação.</p>
-      <p>Para iniciar o servidor de desenvolvimento, execute <code>npm run dev</code>.</p>
+      <p>
+        Para iniciar o servidor de desenvolvimento, execute{" "}
+        <code>npm run dev</code>.
+      </p>
       <Footer></Footer>
     </div>
-    
   );
 }
 
@@ -17,5 +19,7 @@ function Footer() {
     </footer>
   );
 }
+
+
 
 export default Home;

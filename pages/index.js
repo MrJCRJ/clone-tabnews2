@@ -20,6 +20,4 @@ function Footer() {
   );
 }
 
-
-
 export default Home;

@@ -1,25 +1,24 @@
-import { Client } from "pg"
+import { Client } from "pg";
 
 async function query(queryObject) {
-  let client
+  let client;
 
   try {
-    client = await getNewClient()
-    const result = await client.query(queryObject)
-    return result
+    client = await getNewClient();
+    const result = await client.query(queryObject);
+    return result;
   } catch (error) {
-    console.error("Error connecting to the database:", error)
-    throw error
+    console.error("Error connecting to the database:", error);
+    throw error;
   } finally {
-    await client.end()
+    await client.end();
   }
-
 }
 
 export default {
   query,
   getNewClient,
-}
+};
 
 async function getNewClient() {
   const client = new Client({
